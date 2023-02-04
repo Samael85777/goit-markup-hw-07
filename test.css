@@ -1,0 +1,65 @@
+/* Mobile */
+
+.section-hero {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--color-primary);
+  padding-top: 192px;
+  padding-bottom: 192px;
+  width: 1440px;
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and and (max-width: 767px) {
+  .section-hero {
+    background-image: url("photo@2x.png");
+  }
+}
+
+/* Tablet */
+
+@media screen and (mix-width: 768px) {
+  .section-hero {
+    background-image: url("photo@2x.png");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (mix-width: 768px),
+  screen and (min-resolution: 192dpi) and (mix-width: 768px),
+  screen and (min-resolution: 2dppx) and and (mix-width: 768px) {
+  .section-hero {
+    background-image: url("photo@2x.png");
+  }
+}
+
+/* Desctop */
+
+@media screen and (mix-width: 1200px) {
+  .section-hero {
+    background-image: url("photo@2x.png");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (mix-width: 1200px),
+  screen and (min-resolution: 192dpi) and (mix-width: 1200px),
+  screen and (min-resolution: 2dppx) and and (mix-width: 1200px) {
+  .section-hero {
+    background-image: url("photo@2x.png");
+  }
+}
+
+-------------------------
+
+<img
+srcset="./images/img-2x.jpg 2x"
+src="./images/img-2.jpg"
+alt="mobile-application-design"
+width="360"
+/>
