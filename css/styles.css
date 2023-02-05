@@ -77,7 +77,8 @@ img {
 /* navigation */
 
 .container {
-  width: 1158px;
+  width: 428px;
+  /* width: 1158px; */
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -228,13 +229,13 @@ img {
 /* section advantages */
 
 .advantages {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
-.container-advantages {
+/* .container-advantages {
   margin-bottom: 8px;
-}
+} */
 
 .visually-hidden {
   width: 1px;
@@ -250,31 +251,36 @@ img {
 
 .advantages-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px;
+  justify-content: center;
 }
+
 .container-advantages-list-item {
+  display: none;
   height: 112px;
   background: #f4f4fd;
   border-radius: 4px;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .advantages-list-item {
-  max-width: 264px;
+  max-width: 100%;
 }
 
 .advantages-list-item-title {
+  text-align: center;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 1.2;
+  font-size: 36px;
+  line-height: 1.11;
   color: var(--color-primary);
   margin-top: 8px;
   margin-bottom: 8px;
 }
 
 .advantages-list-item-text {
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   color: var(--color-secondary);
@@ -711,7 +717,7 @@ img {
 }
 
 .footer-form-icon {
- margin-left: 16px;
+  margin-left: 16px;
 }
 
 /* Window modal */
@@ -917,4 +923,41 @@ img {
   color: var(--color-third);
   background-color: var(--color-button-action);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+--------------------- 
+/* MEDIA */
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 428px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 736px;
+  }
+
+  .advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+    justify-content: center;
+  }
+
+  .advantages-list-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .advantages-list-item-title {
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1158px;
+  }
 }
