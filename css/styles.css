@@ -957,43 +957,44 @@ img {
   .customers-list-item {
     width: calc((100% - 24px * 3) / 3);
   }
+}
 
-  /* DESCTOP */
+/* DESCTOP */
 
-  @media screen and (min-width: 1200px) {
-    .container {
-      width: 1158px;
-    }
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1158px;
+  }
 
-    /* Section ADVANTAGES */
+  /* Section ADVANTAGES */
 
-    .advantages {
-      padding-top: 120px;
-      padding-bottom: 120px;
-    }
+  .advantages {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 
-    .advantages-list {
-      display: flex;
-      gap: 24px;
-    }
-    .container-advantages-list-item {
-      height: 112px;
-      background: #f4f4fd;
-      border-radius: 4px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+  .advantages-list {
+    display: flex;
+    gap: 24px;
+  }
+  
+  .container-advantages-list-item {
+    height: 112px;
+    background: #f4f4fd;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .advantages-list-item {
-      max-width: 264px;
-    }
+  .advantages-list-item {
+    max-width: 264px;
+  }
 
-    .advantages-list-item-title {
-      font-weight: 700;
-      font-size: 20px;
-      line-height: 1.2;
-    }
+  .advantages-list-item-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
   }
 
   /* Section WORK */
