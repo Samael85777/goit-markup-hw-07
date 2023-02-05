@@ -928,6 +928,12 @@ img {
 --------------------- 
 /* MEDIA */
 
+@media  and (max-width: 1158px) {
+  .work {
+    display: none;
+  }
+}
+
 /* MOBILE */
 
 @media screen and (min-width: 480px) {
@@ -936,12 +942,20 @@ img {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .work {
+    display: none;
+  } 
+}
+
 /* TABLET */
 
 @media screen and (min-width: 768px) {
   .container {
     width: 736px;
   }
+
+  /* Section ADVANTAGES */
 
   .advantages-list {
     display: flex;
@@ -965,6 +979,8 @@ img {
   .container {
     width: 1158px;
   }
+
+  /* Section ADVANTAGES */
 
   .advantages {
     padding-top: 120px;
@@ -993,4 +1009,30 @@ img {
     font-size: 20px;
     line-height: 1.2;
   }
+}
+
+/* Section WORK */
+
+.work {
+  padding-bottom: 120px;
+}
+
+.work-title {
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+  text-align: center;
+}
+
+.work-title-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.work-title-list-img {
+  width: calc((100% - 48px) / 3);
 }
