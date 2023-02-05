@@ -915,7 +915,7 @@ img {
 
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 428px;
+    width: 428px;
   }
 }
 
@@ -951,8 +951,12 @@ img {
 
   /* Section TEAM */
 
-  .team-list-card {
-    width: calc((100% - 72px) / 2);
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 72px;
+    column-gap: 24px;
   }
 
   /* section customers */
@@ -1032,7 +1036,7 @@ img {
 
   /* section our team */
 
-  /* .team {
+  .team {
     background-color: var(--color-background-brand);
     padding-top: 120px;
     padding-bottom: 120px;
@@ -1109,7 +1113,7 @@ img {
   .social-link:hover,
   .social-link:focus {
     background-color: #404bbf;
-  } */
+  }
 
   /* section customers */
 
