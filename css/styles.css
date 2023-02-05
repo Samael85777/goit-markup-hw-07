@@ -52,6 +52,8 @@ img {
 
 .container-navigation {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* logo */
@@ -64,7 +66,7 @@ img {
   color: var(--color-primary);
   text-transform: uppercase;
   text-decoration: none;
-  margin-right: 77px;
+  margin-right: auto;
   padding-top: 24px;
   padding-bottom: 24px;
   display: block;
@@ -91,13 +93,23 @@ img {
 }
 
 .navigation-list {
-  display: none;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  /* display: flex; */
+  display: flex;
   gap: 40px;
+}
+
+.btn-burger {
+  width: 32px;
+  height: 22px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  padding: 0;
 }
 
 .link-navigation {
@@ -142,11 +154,10 @@ img {
 /* contacts */
 
 .navigation-contacts-list {
-  display: none;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  /* display: flex; */
+  display: flex;
   gap: 20px;
   align-items: center;
 }
@@ -907,8 +918,15 @@ img {
 --------------------- 
 /* MEDIA */
 
-@media  and (max-width: 1158px) {
+@media screen and (max-width: 1158px) {
   .work {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navigation-list,
+  .navigation-contacts-list {
     display: none;
   }
 }
@@ -981,7 +999,7 @@ img {
 
   /* Header */
 
-/* .header {
+  /* .header {
   background-color: var(--color-third);
   box-shadow: 0px 0px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 0px 0px rgba(46, 47, 66, 0.08);
@@ -991,9 +1009,9 @@ img {
   display: flex;
 } */
 
-/* logo */
+  /* logo */
 
-/* .link-logo {
+  /* .link-logo {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 18px;
@@ -1011,9 +1029,9 @@ img {
   color: var(--color-action);
 } */
 
-/* navigation */
+  /* navigation */
 
-/* .container {
+  /* .container {
   width: 428px;
   padding-left: 15px;
   padding-right: 15px;
@@ -1074,9 +1092,9 @@ img {
   color: var(--color-action);
 } */
 
-/* contacts */
+  /* contacts */
 
-/* .navigation-contacts-list {
+  /* .navigation-contacts-list {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
