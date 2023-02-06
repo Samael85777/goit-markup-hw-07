@@ -54,6 +54,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-content: space-between;
 }
 
 /* logo */
@@ -89,7 +90,6 @@ img {
 .navigation {
   display: flex;
   align-items: center;
-  margin-right: auto;
 }
 
 .navigation-list {
@@ -950,6 +950,10 @@ img {
 @media screen and (min-width: 768px) {
   .container {
     width: 736px;
+  }
+
+  .btn-burger {
+    display: none;
   }
 
   /* Section ADVANTAGES */
