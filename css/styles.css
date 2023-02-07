@@ -150,15 +150,30 @@ img {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  
+}
+
+.mobile-link-contacts {
+  display: flex;
+  text-decoration: none;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.02em;
   color: #434455;
 }
 
-.mobile-contacts {
+.contacts-social-list-container {
+  width: 100%;
+}
+
+.contacts-social-list{
   display: flex;
-  text-decoration: none;
+  gap: 56px;
+  margin-top: 48px;
+}
+.social-list-contacts {
+  width: 40px;
+  height: 40px;
 }
 
 /* navigation */
