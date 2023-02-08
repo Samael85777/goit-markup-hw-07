@@ -150,7 +150,6 @@ img {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  
 }
 
 .mobile-link-contacts {
@@ -166,9 +165,9 @@ img {
   width: 100%;
 }
 
-.contacts-social-list{
+.contacts-social-list {
   display: flex;
-  gap: 56px;
+  justify-content: space-between;
   margin-top: 48px;
 }
 .social-list-contacts {
@@ -1020,6 +1019,12 @@ img {
   .navigation-contacts-list {
     display: none;
   }
+
+  @media screen and (min-width: 768px) {
+    .contacts-icon {
+      display: none;
+    }
+  }
 }
 
 /* MOBILE */
@@ -1036,6 +1041,12 @@ img {
   }
 }
 
+@media screen and (min-width: 320px) {
+  .contacts-social-list-container {
+    width: 337px;
+  }
+}
+
 /* TABLET */
 
 @media screen and (min-width: 768px) {
@@ -1045,6 +1056,40 @@ img {
 
   .btn-burger {
     display: none;
+  }
+
+  /* Section HEADER */
+
+  .container-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+
+  .link-logo {
+    margin-right: 120px;
+  }
+
+  .navigation-contacts-list {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-left: 118px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+  }
+
+  .link-contacts {
+    padding: 0;
   }
 
   /* Section ADVANTAGES */
@@ -1094,128 +1139,130 @@ img {
 
   /* Header */
 
-  /* .header {
-  background-color: var(--color-third);
-  box-shadow: 0px 0px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 0px 0px rgba(46, 47, 66, 0.08);
-}
+  .header {
+    background-color: var(--color-third);
+    box-shadow: 0px 0px 0px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 0px 0px rgba(46, 47, 66, 0.08);
+  }
 
-.container-navigation {
-  display: flex;
-} */
+  .container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
+
+  .container-navigation {
+    display: flex;
+  }
 
   /* logo */
 
-  /* .link-logo {
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.33;
-  color: var(--color-primary);
-  text-transform: uppercase;
-  text-decoration: none;
-  margin-right: 77px;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  display: block;
-}
+  .link-logo {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.33;
+    color: var(--color-primary);
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: 77px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: block;
+  }
 
-.web-header-logo {
-  color: var(--color-action);
-} */
+  .web-header-logo {
+    color: var(--color-action);
+  }
 
   /* navigation */
 
-  /* .container {
-  width: 428px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
+  .navigation {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
 
-.navigation {
-  display: flex;
-  align-items: center;
-  margin-right: auto;
-}
+  .navigation-list {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    display: flex;
+    gap: 40px;
+  }
 
-.navigation-list {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  display: flex;
-  gap: 40px;
-}
+  .link-navigation {
+    color: var(--color-primary);
+    text-decoration: none;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+  }
 
-.link-navigation {
-  color: var(--color-primary);
-  text-decoration: none;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  display: flex;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
-}
+  .link-navigation:hover,
+  .link-navigation:focus {
+    color: var(--color-action);
+  }
 
-.link-navigation:hover,
-.link-navigation:focus {
-  color: var(--color-action);
-}
+  .link-navigation-line-studio::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    background: var(--color-button-action);
+    border-radius: 2px;
+    position: absolute;
+    bottom: 0;
+  }
 
-.link-navigation-line-studio::after {
-  content: "";
-  width: 100%;
-  height: 4px;
-  background: var(--color-button-action);
-  border-radius: 2px;
-  position: absolute;
-  bottom: 0;
-}
+  .link-navigation-line-portfolio::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    background: var(--color-button-action);
+    border-radius: 2px;
+    position: absolute;
+    bottom: 0;
+  }
 
-.link-navigation-line-portfolio::after {
-  content: "";
-  width: 100%;
-  height: 4px;
-  background: var(--color-button-action);
-  border-radius: 2px;
-  position: absolute;
-  bottom: 0;
-}
-
-.link.current {
-  color: var(--color-action);
-} */
+  .link.current {
+    color: var(--color-action);
+  }
 
   /* contacts */
 
-  /* .navigation-contacts-list {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
+  .navigation-contacts-list {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 0;
+    flex-direction: row;
+  }
 
-.link-contacts {
-  display: flex;
-  align-items: center;
-  color: var(--color-secondary);
-  text-decoration: none;
-  fill: var(--color-secondary);
-  gap: 10px;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  .link-contacts {
+    display: flex;
+    align-items: center;
+    color: var(--color-secondary);
+    text-decoration: none;
+    fill: var(--color-secondary);
+    gap: 10px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-.link-contacts:hover,
-.link-contacts:focus .link-contacts {
-  fill: var(--color-action);
-  color: var(--color-action);
-} */
+  .link-contacts:hover,
+  .link-contacts:focus .link-contacts {
+    fill: var(--color-action);
+    color: var(--color-action);
+  }
 
   /* Section ADVANTAGES */
 
