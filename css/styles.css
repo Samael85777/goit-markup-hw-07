@@ -655,7 +655,7 @@ img {
 
 /* footer */
 
-/* .footer {
+.footer {
   background-color: var(--color-background-section);
   padding: 100px 0 100px 0;
 }
@@ -814,7 +814,7 @@ img {
 
 .footer-form-icon {
   margin-left: 16px;
-} */
+}
 
 /* Window modal */
 
@@ -1050,9 +1050,15 @@ img {
     width: 428px;
   }
 
-  /* .footer-form-input {
+  .footer-form-input {
     width: 396px;
-  } */
+  }
+
+  .footer-container-all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /* @media screen and (max-width: 320px) {
