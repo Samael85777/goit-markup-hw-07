@@ -111,6 +111,7 @@ img {
   padding-top: 80px;
   padding-bottom: 40px;
   padding-left: 40px;
+  padding-right: 40px;
 }
 
 .mobile-button-close {
@@ -144,6 +145,12 @@ img {
   text-decoration: none;
   display: flex;
   align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-link:hover,
+.mobile-menu-link:focus {
+  color: var(--color-action);
 }
 
 .mobile-contacts-list {
@@ -152,13 +159,35 @@ img {
   gap: 40px;
 }
 
-.mobile-link-contacts {
+.mobile-link-contacts-tel {
+  display: flex;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: #434455;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-link-contacts-tel:hover,
+.mobile-link-contacts-tel:focus {
+  color: var(--color-action);
+}
+
+.mobile-link-contacts-mail {
   display: flex;
   text-decoration: none;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   color: #434455;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-link-contacts-mail:hover,
+.mobile-link-contacts-mail:focus {
+  color: var(--color-action);
 }
 
 .contacts-social-list-container {
@@ -504,7 +533,7 @@ img {
 }
 
 .customers-list-item {
-  width: calc((100% - 16px * 3) / 2);
+  width: calc((100% - 16px) / 2);
   height: 88px;
 }
 
@@ -1035,11 +1064,11 @@ img {
   .navigation-contacts-list {
     display: none;
   }
+}
 
-  @media screen and (min-width: 768px) {
-    .contacts-icon {
-      display: none;
-    }
+@media screen and (max-width: 1158px) {
+  .contacts-icon {
+    display: none;
   }
 }
 
@@ -1061,11 +1090,15 @@ img {
   }
 }
 
-/* @media screen and (max-width: 320px) {
+@media screen and (max-width: 320px) {
   .footer-form-input {
     width: 296px;
   }
-} */
+
+  .mobile-link-contacts-tel {
+    font-size: 24px;
+  }
+}
 
 @media screen and (max-width: 1200px) {
   .work {
@@ -1075,7 +1108,7 @@ img {
 
 @media screen and (min-width: 320px) {
   .contacts-social-list-container {
-    width: 337px;
+    width: 100%;
   }
 }
 
@@ -1083,10 +1116,12 @@ img {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 736px;
+    width: 100%;
+    margin: 0;
   }
 
-  .btn-burger {
+  .btn-burger,
+  .mobile-menu {
     display: none;
   }
 
@@ -1174,12 +1209,17 @@ img {
 
   /* section customers */
 
+  .customers > .container {
+    padding-left: 108px;
+    padding-right: 108px;
+  }
+
   .customers-list {
     column-gap: 24px;
   }
 
   .customers-list-item {
-    width: calc((100% - 24px * 3) / 3);
+    width: calc((100% - (-120px)) / 4);
   }
 
   /* Section FOOTER */
@@ -1192,7 +1232,9 @@ img {
   .footer-container-all {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     padding-left: 108px;
+    padding-right: 108px;
   }
 
   .footer-container {
@@ -1200,7 +1242,7 @@ img {
     margin-bottom: 72px;
   }
 
-  .footer-logo {
+  /* .footer-logo {
     font-family: "Raleway";
     font-weight: 700;
     font-size: 18px;
@@ -1209,49 +1251,42 @@ img {
     text-transform: uppercase;
     text-decoration: none;
     color: var(--color-background-brand);
-  }
+  } */
 
-  .web-footer-logo {
+  /* .web-footer-logo {
     font-family: "Raleway";
     font-weight: 700;
     font-size: 18px;
     line-height: 1.16;
     letter-spacing: 0.03em;
     color: var(--color-action);
-  }
+  } */
 
-  .footer-text {
+  /* .footer-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-background-button);
     margin-top: 16px;
-  }
+  } */
 
-  .social-media {
+  /* .social-media {
     width: 208px;
     margin-left: 24px;
-  }
+  } */
 
-  .social-media-title {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--color-third);
-    margin-bottom: 16px;
-  }
+  
 
-  .social-media-list {
+  /* .social-media-list {
     display: flex;
     gap: 16px;
     justify-content: center;
-  }
-  .media-list {
+  } */
+  /* .media-list {
     width: 40px;
     height: 40px;
-  }
-  .media-link {
+  } */
+  /* .media-link {
     width: 100%;
     height: 100%;
     display: flex;
@@ -1268,7 +1303,7 @@ img {
   }
 
   .footer-form-subscribe {
-  }
+  } */
 
   .footer-form-text {
     font-weight: 500;
@@ -1666,6 +1701,10 @@ img {
   }
 
   /* section customers */
+
+  .customers > .container {
+    padding: 0;
+  }
 
   .customers {
     padding-top: 130px;
