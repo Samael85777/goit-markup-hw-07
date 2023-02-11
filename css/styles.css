@@ -412,7 +412,6 @@ img {
   font-size: 36px;
   line-height: 1.11;
   color: var(--color-primary);
-  margin-top: 8px;
   margin-bottom: 8px;
 }
 
@@ -427,7 +426,7 @@ img {
 
 .team {
   background-color: var(--color-background-brand);
-  padding-top: 120px;
+  padding-top: 96px;
   padding-bottom: 120px;
 }
 
@@ -686,7 +685,7 @@ img {
 
 .footer {
   background-color: var(--color-background-section);
-  padding: 100px 0 100px 0;
+  padding: 96px 0 96px 0;
 }
 
 .footer-container-all {
@@ -702,6 +701,7 @@ img {
 
 .footer-container {
   width: 264px;
+  margin-bottom: 72px;
 }
 
 .footer-logo {
@@ -732,7 +732,6 @@ img {
   letter-spacing: 0.02em;
   color: var(--color-background-button);
   margin-top: 16px;
-  margin-bottom: 72px;
 }
 
 .social-media {
@@ -871,8 +870,8 @@ img {
 
 .modal {
   position: absolute;
-  width: 408px;
-  top: 50%;
+  width: 292px;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: #fcfcfc;
@@ -1095,9 +1094,23 @@ img {
   }
 }
 
+@media screen and (min-width: 420px) {
+  .modal {
+    width: 408px;
+    top: 45%;
+    left: 50%;
+  }
+}
+
 @media screen and (max-width: 320px) {
   .footer-form-input {
     width: 296px;
+  }
+
+  .modal {
+    width: 292px;
+    top: 45%;
+    left: 50%;
   }
 
   .mobile-link-contacts-tel {
@@ -1334,6 +1347,12 @@ img {
 
   .footer-form-icon {
     margin-left: 16px;
+  }
+
+  .modal {
+    width: 408px;
+    top: 45%;
+    left: 50%;
   }
 }
 
