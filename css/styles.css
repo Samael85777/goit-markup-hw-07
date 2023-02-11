@@ -1221,6 +1221,12 @@ img {
 
   /* Section TEAM */
 
+  .team > .container {
+    width: 768px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
   .team-list {
     display: flex;
     flex-wrap: wrap;
@@ -1613,6 +1619,10 @@ img {
     background-color: var(--color-background-brand);
     padding-top: 120px;
     padding-bottom: 120px;
+  }
+
+  .team > .container {
+    width: 1158px;
   }
 
   .team-title {
