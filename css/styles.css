@@ -1274,18 +1274,13 @@ img {
   }
 
   .footer-form-subscribe {
-  }
-  */ .footer-form-text {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--color-third);
-    margin-bottom: 16px;
+    align-items: start;
   }
 
   .footer-form-container {
     display: flex;
+    flex-direction: row;
+    align-items: end;
   }
 
   .footer-form-input {
@@ -1703,7 +1698,14 @@ img {
   .footer-container-all {
     display: flex;
     flex-wrap: nowrap;
-    padding-left: 0;
+    padding: 0;
+    align-items: start;
+  }
+
+  .media-container {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0;
   }
 
   .footer-container {
@@ -1787,7 +1789,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-third);
-    margin-bottom: 16px;
+    margin: 0;
   }
 
   .footer-form-container {
